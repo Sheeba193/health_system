@@ -1,0 +1,164 @@
+/* General Container Styles */
+.clients-container {
+    padding: 2rem;
+    background-color: #f7fafc;
+  }
+  
+  .clients-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .clients-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+  }
+  
+  /* When No Clients Found */
+  .no-clients {
+    text-align: center;
+  }
+  
+  .add-client-btn {
+    margin-top: 1rem;
+    background-color: #3182ce;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .add-client-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    margin-top: 2rem;
+    overflow-x: auto; /* Allow horizontal scroll if needed */
+  }
+  
+  .clients-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .clients-table th,
+  .clients-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .clients-table th {
+    background-color: #2d3748;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .clients-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  .clients-table tr:hover {
+    background-color: #edf2f7;
+  }
+  
+  .actions-col {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .edit-btn {
+    background-color: #38b2ac;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #319795;
+  }
+  
+  .delete-btn {
+    background-color: #e53e3e;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c53030;
+  }
+  
+
+  @media (max-width: 768px) {
+    .clients-table {
+      display: block;
+      width: 100%;
+    }
+  
+    .clients-table th, .clients-table td {
+      padding: 8px;
+      font-size: 0.875rem;
+    }
+  
+    .clients-table thead {
+      display: none; 
+    }
+  
+    .clients-table tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+    .clients-table td {
+      border-top: 1px solid #e2e8f0;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .actions-col {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  
+    .add-client-btn {
+      width: 100%;
+    }
+  
+
+    .actions-col button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .clients-title {
+      font-size: 1.5rem;
+    }
+  
+    .add-client-btn {
+      font-size: 1rem;
+    }
+  }
+  

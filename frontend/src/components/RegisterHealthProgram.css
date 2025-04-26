@@ -1,0 +1,117 @@
+.program-registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    background-color: #f9fafb;
+    min-height: 40vh;
+  }
+  
+  .registration-card {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    max-width: 500px;
+    width: 100%;
+  }
+  .profile-link p{
+    font-size: 16px;
+    margin-right:100px;
+    font-weight: bold;   
+    text-decoration: none;  
+    padding: 5px 10px;  
+    border-radius: 5px;
+    background-color: #f0f0f0; 
+    transition: all 0.3s ease;  
+  }
+  
+
+  .profile-link:hover {
+    color: #fff;  
+     
+    text-decoration: none;  
+  }
+  .form-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+    text-align: center;
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #4a5568;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.75rem 1rem;
+    border: 2px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+  }
+  
+  .submit-button {
+    padding: 0.75rem 1rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .registration-card {
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+  
+    .form-title {
+      font-size: 1.5rem;
+    }
+  
+    .form-input,
+    .form-textarea,
+    .submit-button {
+      font-size: 0.95rem;
+    }
+  }
+    
